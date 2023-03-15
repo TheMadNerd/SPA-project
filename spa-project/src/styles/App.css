@@ -1,0 +1,47 @@
+.App {
+    width: 90%;
+    margin: 0 auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    flex-basis: 30vh;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 30px 0;
+}
+
+.Menu {
+    min-width: 240px;
+
+}
+
+.Menu li{
+
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.Menu ul {
+    list-style-type: none;
+}
+
+
+.Page {
+    flex-grow: 1;
+}
+
+.Footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}

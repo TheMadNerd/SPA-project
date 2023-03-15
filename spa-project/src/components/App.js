@@ -14,12 +14,15 @@ class App extends Component {
         <header>
           {<Header />}
         </header>
-        <div className='Menu'>
-          {<Navigation />}
-        </div>
-        <div className='Page'>
-          {<Page />}
-        </div>
+        <main>
+          <div className='Menu'>
+            {<Navigation />}
+          </div>
+
+          <div className='Page'>
+            {<Page />}
+          </div>
+        </main>
         <div className='Footer'>
           {<Footer />}
         </div>
