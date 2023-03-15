@@ -35,6 +35,25 @@ const Header = () => {
                 alt="city"/>}
                 />
 
+                <Route
+                 path="/products/car"
+                 element={<img src={img1}
+                 alt="city"/>}
+                 />
+
+                <Route
+                 path="/products/bike"
+                 element={<img src={img2}
+                 alt="city"/>}
+                 />
+
+                <Route
+                 path="/products/motorcycle"
+                 element={<img src={img3}
+                 alt="city"/>}
+                 />
+                
+
                 
 
             </Routes>
