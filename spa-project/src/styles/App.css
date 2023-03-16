@@ -1,7 +1,7 @@
 .App {
     width: 90%;
     margin: 0 auto;
-    background-color: grey;
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -9,7 +9,18 @@
 
 header {
     flex-basis: 30vh;
-    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+
 }
 
 main {
@@ -20,13 +31,48 @@ main {
 
 .Menu {
     min-width: 240px;
+    padding: 0 30px 30px 0;
 
 }
 
-.Menu li{
+.Menu a{
 
+    display: block;
     text-transform: uppercase;
     padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: .3s;
+}
+
+.Menu a:hover {
+    transform: translateX(20px);
+    
+}
+
+.Menu a.active {
+    border-left: 10px grey solid;
+}
+
+.Menu li {
+    padding: 10px;
+}
+
+.Menu li:nth-child(1) a.active {
+    border-left-color: green;
+}
+
+.Menu li:nth-child(2) a.active {
+    border-left-color: blue;
+}
+
+.Menu li:nth-child(3) a.active {
+    border-left-color: orange;
+}
+
+.Menu li:nth-child(4) a.active {
+    border-left-color: red;
 }
 
 .Menu ul {
